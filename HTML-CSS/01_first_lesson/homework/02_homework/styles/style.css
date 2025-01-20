@@ -1,0 +1,119 @@
+* {
+    box-sizing: border-box;
+    max-width: 500px;
+}
+body {
+    margin: 0px 10px;
+}
+.text-one {
+    max-width: 800px;
+}
+.text-one1 {
+    text-align: justify;
+}
+.container {
+max-width: 600px;
+margin: left;
+}
+
+.home {
+    text-align: center;
+}
+
+/* Нумерованый список */
+ol {
+    list-style-position: inside
+}
+
+.li {
+    font-size: 18px;
+    text-align: justify;
+}
+
+.a1 {
+    color: black;
+    text-decoration: none;
+    text-align: center;
+}
+.a1:hover {
+    color: red;
+}
+/* Нумерованый список */
+
+/* Хеадер формы */
+.header {
+    padding: 28px;
+  max-width: 600px;
+  background: #286782;
+  border-radius: 6px 6px 0px 0px;
+}
+.reg-form {
+    display: flex;
+}
+.head-text {
+  flex-grow: 1;
+margin: 0;
+font-style: normal;
+font-weight: bold;
+font-size: 20px;
+color: #ffffff;
+text-align: center;
+}
+/* Хеадер формы */
+
+/* ФОРМА */
+.register-form {
+    padding: 40px 60px;
+  max-width: 600px;
+  background-color: #efefef;
+  border-radius: 0px 0px 6px 6px;
+}
+
+.name,
+.email,
+.password {
+    margin-bottom: 20px;
+    padding: 11px 15px;
+    display: block;
+    width: 100%;
+    background: #ffffff;
+    border: 1px solid #cecece;
+    border-radius: 6px 6px 0px 0px;
+    resize: none;
+  }
+  .name:focus,
+  .email:focus,
+  .password:focus {
+    box-shadow: 0 0 8px grey;
+    outline: none;
+    transition: all 0.4s ease 0s;
+  }
+  /* ФОРМА */
+
+  /* КНОПКА ФОРМЫ */
+  .form-btn {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .send-btn {
+    padding: 20px 65px;
+    border: none;
+    color: #ffffff;
+    background: #286782;
+    border-radius: 6px;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  
+  .send-btn:hover {
+    background: skyblue;
+    letter-spacing: 1px;
+    box-shadow: 0 0 6px black;
+    transition: all 0.4s ease 0s;
+  }
+  /* КНОПКА ФОРМЫ */
+
+  .HTT {
+    text-align: center;
+  }
