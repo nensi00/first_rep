@@ -1,0 +1,279 @@
+@import url(fonts.css);
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.container {
+    max-width: 886px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+/* HEADER  */
+.header {
+    background: linear-gradient(#FFFAFA, #FAEBD7);
+    position: relative;
+    padding: 0px;
+}
+.header-container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 50px;
+}
+.navigation-header {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-family: Alegreya;
+}
+.header-navigation-item {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.header-navigation-link {
+    font-size: 30px;
+    padding: 20px;
+    color: black;
+    text-decoration: none;
+}
+.header-navigation-link:hover {
+    color: tomato;
+}
+/* END HEADER  */ 
+/* HERO SECTION */
+.hero {
+    background-color: #142850;
+}
+.hero-container {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    padding: 80px 65px;
+}
+.hero-img1 {
+    width: 300px;
+    height: 300px;
+    border-radius: 200px;
+    margin-left: 50px;
+}
+.title-hero {
+    color: #FFFAFA;
+    margin: 0;
+    margin-bottom: 20px;
+    font-weight: bold;
+    font-size: 40px;
+    font-family: Alegreya;
+}
+.text-hero {
+    color: #FFFAFA;
+    margin: 0;
+    margin-bottom: 20px;
+    font-size: 20px;
+    text-align: justify;
+    font-family: Alegreya;
+}
+.btn-hero {
+    font-size: 20px;
+    padding: 15px;
+    border-radius: 10px;
+    color: white;
+    transition: .2s linear;
+    background: #0a3682;
+}
+.btn-hero:hover {
+    transform: translate(0,-3px);
+    box-shadow: 0 20px 40px 0 rgba(11, 99, 246, 1);
+}
+/* END HERO SECTION */
+/* SECTION ABOUT ME */
+.about-me {
+    background-color: antiquewhite;
+}
+.title-about {
+    text-align: center;
+    font-size: 40px;
+    padding: 30px 0px;
+    font-family: Alegreya;
+}
+.text-about {
+    text-align: center;
+    font-size: 20px;
+    padding: 20px 0px;
+    font-family: Alegreya;
+}
+/* END SECTION ABOUT ME */
+/* SKILLS  */
+.skills {
+    background-color: rgb(247, 241, 233);
+}
+.title-skills {
+    text-align: center;
+    padding: 30px 0px;
+    font-size: 40px;
+    font-family: Alegreya;
+}
+.img-skills2 {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    gap: 150px;
+}
+.img-skills1 {
+    width: 200px;
+    height: 200px;
+}
+/* END SKILLS  */
+/* CONTACTS  */
+.contacts {
+    background-color: rgb(237, 235, 231);
+}
+.title-contacts {
+    text-align: center;
+    padding: 40px;
+    font-size: 40px;
+    font-family: Alegreya;
+}
+.img-contacts1 {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.img-contacts-li {
+    list-style: none;
+}
+.img-contacts-img {
+    width: 100px;
+}
+/* END CONTACTS  */
+/* FOOTER  */
+.footer {
+    padding: 20px;
+    text-align: center;
+    font-size: 30px;
+    font-family: Alegreya;
+    background-color: beige;
+}
+/* END FOOTER  */
+
+/* MOBILE VERSION  */
+  /* --- HEADER --- */
+    .burger-menu {
+        display: none;
+    }
+    @media (max-width: 768px) {
+        .header-container {
+            justify-content: space-between;
+            margin-right: 15px;
+        }
+        .navigation-header {
+            display: none;
+            flex-direction: column;
+            position: absolute;
+            top: 70px;
+            right: 15px;
+            background: #fff;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            padding: 10px;
+            width: 200px;
+        }
+        .navigation-header.open {
+            display: flex;
+        }
+        .burger-menu {
+            display: block;
+            font-size: 30px;
+            cursor: pointer;
+        }
+    /* END HEADER  */
+
+    /* --- HERO SECTION --- */
+    .hero-container {
+        flex-direction: column-reverse;
+        padding: 20px;
+    }
+
+    .hero-img1 {
+        width: 200px;
+        height: 200px;
+        margin: 20px auto 0;
+    }
+
+    .title-hero {
+        font-size: 24px;
+        text-align: center;
+    }
+
+    .text-hero {
+        font-size: 16px;
+        text-align: justify;
+    }
+
+    .btn-hero {
+        font-size: 16px;
+        padding: 10px;
+        width: 100%;
+    }
+
+    /* END HERO SECTION  */
+
+    /* --- ABOUT ME, SKILLS и CONTACTS --- */
+    .title-about, .title-skills, .title-contacts {
+        font-size: 28px;
+    }
+
+    .text-about {
+        font-size: 16px;
+    }
+
+    .img-skills2 {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .img-skills1 {
+        width: 100px;
+        height: 100px;
+    }
+
+    .img-contacts1 {
+        gap: 20px;
+    }
+
+    .img-contacts-img {
+        width: 50px;
+    }
+
+    /* END ABOUT ME, SKILLS, CONTACTS  */
+
+    /* --- FOOTER --- */
+    .footer {
+        font-size: 16px;
+    }
+    /* END FOOTER  */
+}
+
+/* --- Дополнительные стили для экранов шириной до 480px --- */
+@media (max-width: 480px) {
+    /* --- HERO SECTION --- */
+    .title-hero {
+        font-size: 20px;
+    }
+
+    .text-hero {
+        font-size: 14px;
+    }
+
+    .btn-hero {
+        font-size: 14px;
+    }
+}
