@@ -1,0 +1,24 @@
+@import url(./fonts.css);
+* {
+    box-sizing: border-box;
+    font-family: Alegreya;
+}
+
+.text-container {
+    text-align: justify;
+    max-width: 800px;
+}
+a {
+    font-size: 30px;
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    color: tomato;
+}
+
+ol {
+    list-style: none;
+    text-decoration: none;
+}

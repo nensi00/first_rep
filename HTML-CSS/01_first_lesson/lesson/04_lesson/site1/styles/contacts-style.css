@@ -1,0 +1,45 @@
+@import url(./fonts.css);
+* {
+    box-sizing: border-box;
+    font-family: Alegreya;
+}
+
+.wrapper {
+    max-width: 800px;
+}
+
+h1 {
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+.header a {
+    font-size: 30px;
+    text-decoration: none;
+    color: black;
+}
+.header a:hover {
+    color: tomato;
+}
+
+
+.contact a {
+    font-size: 20px;
+    text-decoration: none;
+    color: black;
+}
+.contact a:hover {
+    color: tomato;
+}
+
+ol {
+    list-style: none;
+}
+.wrapper {
+    padding-right: 20px;
+}
+.nav-header {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+}
