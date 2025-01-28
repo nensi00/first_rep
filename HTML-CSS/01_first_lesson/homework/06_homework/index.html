@@ -27,16 +27,19 @@
                         <label for="pass02">Пароль ще раз</label>
                         <input type="password" id="pass02">
                     </div>
-                    <div class="form__item">
-                        <label for="gen01">Стать</label>
-                        <input type="radio" id="gen01" name="name" checked>
-                        <label for="gen01" name="">Чоловіча</label>
-                        <input type="radio" id="gen01" name="name">
-                        <label for="gen01" name="">Жіноча</label>
+                    <div class="form__item form_item--gen">
+                        <p>Стать</p>
+                        <div class="div">
+                            <input type="radio" id="gen01" name="name" checked>
+                            <label for="gen01" name="">Чоловіча</label>
+                            <input type="radio" id="gen01" name="name">
+                            <label for="gen01" name="">Жіноча</label>
+                        </div>
+                        
                     </div>
                     <div class="form__item">
                         <label for="age01">Вік</label>
-                        <input type="text" id="age01">
+                        <input type="text" oninput="this.value = this.value.replace(/[^0-9]/g, '')" id="age01">
                     </div>
                     <div class="form__item">
                         <label for="curs01">Курс</label>
@@ -49,14 +52,14 @@
                     </div>
                     <div class="form__item">
                         <label for="adr01">Повна адреса</label>
-                        <textarea name="" id="adr" placeholder="Країна, регіон, місто/селище, вулиця"></textarea>
+                        <textarea class="textarea" id="adr01" placeholder="Країна, регіон, місто/селище, вулиця"></textarea>
                     </div>
-                    <div class="form__item">
-                        <input type="checkbox" name="" id="check01">
+                    <div class="form__item form__item--checkbox">
+                        <input class="input__check" type="checkbox" id="check01" required>
                         <label for="check01">Я погоджуюсь з обробкою даних</label>
                     </div>
                     <div class="form__btn">
-                        <button class="btn">Очистити форму</button>
+                        <button class="btn" type="reset">Очистити форму</button>
                         <button class="btn">Зареєструватися</button>
                     </div>
                 </form>
