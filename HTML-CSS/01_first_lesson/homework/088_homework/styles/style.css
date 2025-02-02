@@ -1,0 +1,103 @@
+@import url(./fonts.css);
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.wrapper {
+    display: grid;
+    place-items: center;
+}
+input {
+    width: 19px;
+    height: 19px;
+    accent-color: #FFFFFF;
+    cursor: pointer;
+}
+.title {
+    font-family: Roboto;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28.13px;
+    color: #FF8984;
+}
+.text {
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 18.75px;
+}
+.text__sup {
+    font-family: Roboto;
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 12.89px;
+    color: #FFFFFF;
+}
+.header {
+    background: #4A4F56;
+    max-width: 793px;
+    padding-top: 19px;
+    padding-bottom: 12px;
+    width: 100%;
+}
+.container__header {
+    text-align: center;
+}
+.text__header {
+    color: #FF8984;
+    font-size: 16px;
+}
+.section {
+    max-width: 793px;
+    background: #3B3F45;
+    padding: 20px 130px 45px;
+}
+.container {
+    background: #88839E;
+    max-width: 534px;
+    margin-bottom: 45px;
+}
+.container__item {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    padding-left: 12px;
+    padding-top: 11px;
+    padding-bottom: 13px;
+    background: #88839E;
+}
+.container__label {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+}
+.container__item:hover {
+    background: #625E77;
+    border-top: 3px solid #FFFFFF;
+    border-bottom: 3px solid #FFFFFF;
+}
+.text__main {
+    color: #FFFFFF;
+}
+.btn__first {
+    color: #FF8984;
+    width: 534px;
+    background: #4A4F56;
+    border: none;
+    text-align: center;
+    padding: 12px 0;
+    cursor: pointer;
+}
+.btn__first:hover {
+    background: black;
+    color: white;
+}
+input[type="checkbox"]:checked + label p {
+    text-decoration: line-through;
+    color: #9B96AC;
+}
+.container__item:has(input[type="checkbox"]:checked) {
+    background: #7A7593;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+}
