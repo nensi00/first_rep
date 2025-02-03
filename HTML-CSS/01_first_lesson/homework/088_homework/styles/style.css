@@ -20,6 +20,7 @@ input {
     font-weight: 700;
     line-height: 28.13px;
     color: #FF8984;
+    margin-bottom: 4px;
 }
 .text {
     font-family: Roboto;
@@ -62,20 +63,23 @@ input {
     display: flex;
     gap: 10px;
     align-items: center;
-    padding-left: 12px;
-    padding-top: 11px;
-    padding-bottom: 13px;
+    padding-left: 9px;
+    padding-top: 9px;
+    padding-bottom: 9px;
     background: #88839E;
-}
-.container__label {
-    display: flex;
-    flex-direction: row;
-    align-items: baseline;
+    border-top: 3px solid transparent;
+    border-bottom: 3px solid transparent
 }
 .container__item:hover {
     background: #625E77;
     border-top: 3px solid #FFFFFF;
     border-bottom: 3px solid #FFFFFF;
+}
+.container__label {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    cursor: pointer;
 }
 .text__main {
     color: #FFFFFF;
