@@ -4,9 +4,6 @@
     margin: 0;
     padding: 0;
 }
-.product_li {
-    list-style-image: url(../images/list-style.png);
-}
 .wrapper {
     max-width: 1400px;
     margin: 0 auto;
@@ -18,18 +15,18 @@ p, h1, h2, h3, a, button {
 /* HEADER  */
 .header-container {
     display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #fff;
-  margin-top: 20px;
-  margin-bottom: 30px;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    margin-top: 20px;
+    margin-bottom: 30px;
 }
 .productly {
     display: flex;
-  align-items: center;
-  font-size: 1.2rem;
-  font-weight: bold;
-  color: #333;
+    align-items: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #333;
 }
 .productly img {
     width: 30px;
@@ -73,7 +70,7 @@ p, h1, h2, h3, a, button {
 }
 .btn-up {
     background-color: #f90;
-  color: #fff;
+    color: #fff;
 }
 .btn-up:hover {
     background-color: #e68a00;
@@ -107,7 +104,7 @@ p, h1, h2, h3, a, button {
     font-size: 1rem;
     font-weight: bold;
     border: none;
-    border-radius: 8px; /* Закругленные углы */
+    border-radius: 8px;
     padding: 10px 20px;
     cursor: pointer;
     transition: background-color 0.3s ease-in-out;
@@ -135,6 +132,9 @@ p, h1, h2, h3, a, button {
 }
 /* END SECTION HERO  */
 /* TOOLS  */
+.tools {
+    background: url(../images/bg.png);
+}
 .toolsh2 {
     margin-top: 90px;
     margin-bottom: 55px;
@@ -144,10 +144,6 @@ p, h1, h2, h3, a, button {
 .tools-nav {
     display: flex;
     justify-content: space-between;
-    flex: 1;
-}
-.tools-nav {
-    display: flex;
     flex: 1;
 }
 .tools-li {
@@ -206,12 +202,40 @@ p, h1, h2, h3, a, button {
     align-items: center;
     margin-bottom: 100px;
 }
+.product-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.product-managers li {
+    display: flex;
+    align-items: center; 
+    gap: 10px;
+    list-style: none;
+}
+.product-managers li {
+    display: flex;
+    align-items: center; 
+    gap: 15px; 
+    list-style: none; 
+}
+.product-managers li::before {
+    content: "";
+    background: url("../images/list-style.png") no-repeat center;
+    background-size: contain;
+    width: 35px;
+    height: 35px;
+}
+.product_li {
+    margin-bottom: 30px;
+}
 .container_h2 {
     font-size: 36px;
 }
 .container_text2 {
     font-size: 16px;
     margin: 0;
+    margin-bottom: 40px;
 }
 /* END PRODUCT PAGE  */
 /* MARKETERS PAGE  */
