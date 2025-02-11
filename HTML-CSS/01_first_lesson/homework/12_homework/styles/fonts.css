@@ -1,0 +1,12 @@
+@font-face {
+    font-family: "Delius"; 
+    src:url(../fonts/DeliusUnicase-Regular.ttf) format("truetype"); 
+    font-style: normal; 
+    font-weight: 400; 
+  }
+@font-face {
+    font-family: "Roboto"; 
+    src:url(../fonts/Roboto-VariableFont_wdth\,wght.ttf) format("truetype"); 
+    font-style: normal; 
+    font-weight: 400; 
+  } 
