@@ -1,0 +1,135 @@
+@import url(./fonts.css);
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-top: 16px;
+    padding-bottom: 90px;
+}
+/* SPAN STYLE  */
+.span__underline {
+    font-family: "PT Sans";
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 48px;
+    letter-spacing: 0%;
+    text-decoration: underline;
+}
+.span__italic {
+    font-family: "PT Sans";
+    font-weight: 400;
+    font-style: italic;
+    font-size: 28px;
+    line-height: 48px;
+    letter-spacing: 0%;
+}
+.span__bold {
+    font-family: "PT Sans";
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 48px;
+    letter-spacing: 0%;
+}
+.span__background {
+    font-family: "PT Sans";
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 48px;
+    letter-spacing: 0%;
+    background-color:#DADADA;
+    ;
+}
+/* END SPAN STYLE  */
+/* HEADER  */
+.header__container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 83px;
+}
+.header__txtnav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+.header__nav {
+    display: flex;
+    gap: 10px;
+}
+.header__li {
+    font-family: "Staatliches";
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 27.5px;
+    letter-spacing: 3%;
+    list-style: none;
+}
+.header__a {
+    text-decoration: none;
+    color: #000000;
+    cursor: pointer;
+    opacity: 1;
+    transition: opacity 0.3s;
+}
+.header__a:hover {
+    opacity: 0.5;
+}
+.header__text {
+    font-family: "Tourney";
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 18px;
+    letter-spacing: 4%;
+}
+/* END HEADER  */
+/* MAIN TEXT  */
+.section {
+    margin-bottom: 70px;
+}
+.section:last-child {
+    margin-bottom: 0;
+}
+.section__titles {
+    display: flex;
+    margin-bottom: 40px;
+    gap: 10px;
+}
+.section__title {
+    font-family:"Francois One";
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 48px;
+    letter-spacing: 4%;
+}
+.section__title__sup {
+    font-family: "Farro";
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 30px;
+    letter-spacing: 4%;
+}
+.section__text {
+    font-family: "PT Sans";
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 48px;
+    letter-spacing: 0%;
+    text-align: justify;
+}
+.chapter--3 .section__text {
+    margin-bottom: 40px;
+}
+.chapter--3 .section__text:last-child {
+    margin-bottom: 70px;
+}
+.chapter--4 .section__text {
+    margin-bottom: 40px;
+}
+.chapter--4 .section__text:last-child {
+    margin-bottom: 0;
+}
+/* END MAIN TEXT  */
