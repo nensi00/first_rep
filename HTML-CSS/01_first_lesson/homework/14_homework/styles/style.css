@@ -1,0 +1,298 @@
+@import url(./fonts.css);
+html {
+    scroll-behavior: smooth;
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.wrapper {
+    padding-top: 90px;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-top: 90px;
+    padding-bottom: 90px;
+}
+/* SPAN STYLE  */
+.span__underline {
+    font-family: "PT Sans";
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 48px;
+    letter-spacing: 0%;
+    text-decoration: underline;
+}
+.span__italic {
+    font-family: "PT Sans";
+    font-weight: 400;
+    font-style: italic;
+    font-size: 28px;
+    line-height: 48px;
+    letter-spacing: 0%;
+}
+.span__bold {
+    font-family: "PT Sans";
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 48px;
+    letter-spacing: 0%;
+}
+.span__background {
+    font-family: "PT Sans";
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 48px;
+    letter-spacing: 0%;
+    background-color:#DADADA;
+}
+/* END SPAN STYLE  */
+/* HEADER  */
+.header {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    height: 80px;
+    background-color: #FFFFFF;
+    padding-bottom: 10px;
+    box-shadow: 0px 1px 28px 1px #000000;
+    z-index: 1000;
+}
+.header__container {
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    height: 80px;
+}
+.header__txtnav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+.header__nav {
+    display: flex;
+    gap: 10px;
+}
+.header__li {
+    font-family: "Staatliches";
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 27.5px;
+    letter-spacing: 3%;
+    list-style: none;
+}
+.header__a {
+    text-decoration: none;
+    color: #000000;
+    cursor: pointer;
+    opacity: 1;
+    transition: opacity 0.3s;
+}
+.header__a:hover {
+    opacity: 0.5;
+}
+.header__text {
+    font-family: "Tourney";
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 18px;
+    letter-spacing: 4%;
+}
+/* SIDE BAR */
+.sidebar {
+    position: sticky;
+    top: 90px;
+    width: 380px;
+    color: #000000;
+    float: left;
+    padding-top: 10px;
+}
+.sidebar__ul {
+    list-style: none;
+}
+.sidebar__a {
+    font-family: "Francois One";
+    text-decoration: none;
+    color: #000000;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 48px;
+    letter-spacing: 4%;
+    margin-bottom: 80px;
+    border-bottom: 1px solid #BDBDBD;
+    padding-bottom: 10px;
+    display: block;
+}
+/* END SIDE BAR  */
+
+/* MAIN TEXT  */
+.section {
+    margin-bottom: 70px;
+}
+.section:last-child {
+    margin-bottom: 0;
+}
+.section__hr {
+    width: 100px;
+    height: 8px;
+    background-color: #000000;
+    border: none;
+    margin-bottom: 20px;
+}
+.main__text {
+    margin-left: 415px;
+    z-index: 5;
+}
+.main_bg {
+    position: absolute;
+    z-index: -1;
+    left: 55%;
+}
+.section__titles {
+    display: flex;
+    flex-grow: 1;
+    margin-bottom: 40px;
+    gap: 10px;
+}
+.section__title {
+    font-family:"Francois One";
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 48px;
+    letter-spacing: 4%;
+}
+.section__title__sup {
+    font-family: "Farro";
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 30px;
+    letter-spacing: 4%;
+}
+.section__text {
+    font-family: "PT Sans";
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 48px;
+    letter-spacing: 0%;
+    text-align: justify;
+}
+.chapter--3 .section__text {
+    margin-bottom: 40px;
+}
+.chapter--3 .section__text:last-child {
+    margin-bottom: 70px;
+}
+.chapter--4 .section__text {
+    margin-bottom: 40px;
+}
+.chapter--4 .section__text:last-child {
+    margin-bottom: 0;
+}
+/* END MAIN TEXT  */
+/* PAGE-2  */
+.title__container {
+    display: flex;
+}
+.hr__title {
+    display: flex;
+    width: 100px;
+    height: 8px;
+    background-color: #000000;
+    border: none;
+}
+.title__h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    font-family: "Roboto";
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 48px;
+    letter-spacing: 4%;
+    margin: 0;
+    margin-top: 70px;
+    margin-bottom: 40px;
+}
+
+.using__item {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 200px);
+    gap: 30px;
+}
+.using__link {
+    background:var(--item-img) center center / contain, #E6E6E6;
+    background-repeat: no-repeat;
+    background-size: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s;
+}
+.grid__item1 {
+    --item-img: url(../images/facebook-logo-black.png);
+    --item-hover-img: url(../images/facebook-logo-white.png);
+}
+.grid__item2 {
+    --item-img: url(../images/instagram-logo-black.png);
+    --item-hover-img: url(../images/instagram-logo-white.png);
+}
+.grid__item3 {
+    --item-img: url(../images/shopify-logo-white.png);
+    --item-hover-img: url(../images/shopify-logo-black.png);
+}
+.grid__item4 {
+    --item-img: url(../images/skype-logo-black.png);
+    --item-hover-img: url(../images/skype-logo-white.png);
+}
+.grid__item5 {
+    --item-img: url(../images/pinterest-logo-black.png);
+    --item-hover-img: url(../images/pinterest-logo-white.png);
+}
+.grid__item6 {
+    --item-img: url(../images/wix.com-logo-black.png);
+    --item-hover-img: url(../images/wix.com-logo-white.png);
+}
+.grid__item7 {
+    --item-img: url(../images/saleforse-logo-black.png);
+    --item-hover-img: url(../images/saleforse-logo-white.png);
+}
+.grid__item8 {
+    --item-img: url(../images/soundcloud-logo-black.png);
+    --item-hover-img: url(../images/soundcloud-logo-white.png);
+}
+.using__link:nth-child(3) {
+    background-color: #1A1A1A;
+}
+.using__link:hover {
+    background: var(--item-hover-img) center center / contain, #1A1A1A;
+    background-repeat: no-repeat;
+    background-size: auto;
+}
+.using__link:hover:nth-child(3) {
+    background: var(--item-hover-img) center center / contain, #E6E6E6;
+    background-repeat: no-repeat;
+    background-size: auto;
+}
+.using__hr {
+    margin-bottom: 20px;
+    background-color: #BFBFBF;
+    height: 1px;
+    border: none;
+}
+.using__hr:last-child {
+    margin-bottom: 0;
+    margin-top: 20px;
+}
+/* END PAGE-2  */
