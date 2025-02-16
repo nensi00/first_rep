@@ -238,7 +238,7 @@ html {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    transition: all 0.5s;
+    transition: all 0.8s;
 }
 .grid__item1 {
     --item-img: url(../images/facebook-logo-black.png);
@@ -279,11 +279,13 @@ html {
     background: var(--item-hover-img) center center / contain, #1A1A1A;
     background-repeat: no-repeat;
     background-size: auto;
+    transform: rotateY(360deg);
 }
 .using__link:hover:nth-child(3) {
     background: var(--item-hover-img) center center / contain, #E6E6E6;
     background-repeat: no-repeat;
     background-size: auto;
+    transform: rotateY(360deg);
 }
 .using__hr {
     margin-bottom: 20px;
