@@ -1,0 +1,36 @@
+body {
+    font-family: $sub-fonts;
+    font-weight: 400;
+}
+
+.container {
+    max-width: 1179px;
+    margin: 0 auto;
+    padding: 0 16px;
+}
+
+.logo {
+    max-width: 134px;
+    height: 11px;
+}
+
+.wrapper {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.hover-link-animation {
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+    display: block;
+
+    @media (max-width:tablet) {
+        transition: none;
+
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+
+}

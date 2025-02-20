@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+        }
+        .acordeon_button {
+            background-color:#0E2D4C;
+            padding: 20px;
+            border-radius: 25px;
+            color: aliceblue;
+        }
+        .acordeon__button_content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .li {
+            list-style: none;
+        }
+        .content {
+            display: none;
+        }
+        .tab--1 {
+            display: none;
+        }
+        .tab--1:checked + .content {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="container">
+            <div class="acordeon">
+                <div class="acordeon_item">
+                    <div class="acordeon_button">
+                        <div class="acordeon__button_content">
+                            <label for="check">
+                                Універсальні навички
+                            <svg width="16" height="10" viewBox="0 0 16 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1 1.66797L8 8.66797L15 1.66797" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>    
+                            </label>                           
+                        </div>
+                        <input class="tab--1" type="checkbox" id="check">
+                        <div class="content">
+                            <ul class="ul">
+                                <li class="li">
+                                    <p class="p">text</p>
+                                </li>
+                                <li class="li">
+                                    <p class="p">text</p>
+                                </li>
+                                <li class="li">
+                                    <p class="p">text</p>
+                                </li>
+                                <li class="li">
+                                    <p class="p">text</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="acordeon">
+                <div class="acordeon_item">
+                    <div class="acordeon_button">
+                        <div class="acordeon__button_content">
+                            <label for="check">
+                                Універсальні навички
+                            <svg width="16" height="10" viewBox="0 0 16 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1 1.66797L8 8.66797L15 1.66797" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>    
+                            </label>                           
+                        </div>
+                        <input class="tab--1" type="checkbox" id="check">
+                        <div class="content">
+                            <ul class="ul">
+                                <li class="li">
+                                    <p class="p">text</p>
+                                </li>
+                                <li class="li">
+                                    <p class="p">text</p>
+                                </li>
+                                <li class="li">
+                                    <p class="p">text</p>
+                                </li>
+                                <li class="li">
+                                    <p class="p">text</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="acordeon">
+                <div class="acordeon_item">
+                    <div class="acordeon_button">
+                        <div class="acordeon__button_content">
+                            <label for="check">
+                                Універсальні навички
+                            <svg width="16" height="10" viewBox="0 0 16 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1 1.66797L8 8.66797L15 1.66797" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>    
+                            </label>                           
+                        </div>
+                        <input class="tab--1" type="checkbox" id="check">
+                        <div class="content">
+                            <ul class="ul">
+                                <li class="li">
+                                    <p class="p">text</p>
+                                </li>
+                                <li class="li">
+                                    <p class="p">text</p>
+                                </li>
+                                <li class="li">
+                                    <p class="p">text</p>
+                                </li>
+                                <li class="li">
+                                    <p class="p">text</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

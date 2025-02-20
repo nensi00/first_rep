@@ -1,0 +1,166 @@
+@import url(../fonts/fonts.css);
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+/* Загальні стилі  */
+.title {
+    font-family: Quicksand;
+    font-weight: 500;
+    font-size: 35px;
+    line-height: 35px;
+}
+/* Кінець загальні стилі  */
+.header__container {
+    display: flex;
+    gap: 13px;
+    padding: 22px 135px;
+    border-bottom: 1px solid #EFEEF3;
+    margin-bottom: 100px;
+}
+
+.first__section {
+    padding: 0 135px;
+}
+.first__text {
+    margin-bottom: 40px;
+}
+.first__p {
+    margin-bottom: 15px;
+    font-family: Roboto;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+    color: #7690A8;
+}
+.first__h1 {
+    font-family: Nunito Sans;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 52px;
+    letter-spacing: 0.2px;
+    color: #16133D;
+}
+.first__a {
+    text-decoration: none;
+    color: #3DB370;
+    cursor: pointer;
+    font-family: Roboto;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 18.75px;
+}
+.first__main__form {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    margin-bottom: 100px;
+}
+.first__form {
+    border: 1px solid #E5EAF4;
+    padding: 40px;
+}
+.svg__container {
+    padding: 13px;
+    display: inline-block;
+    border: 1px solid #1565D81A;
+    border-radius: 16px;
+    margin-bottom: 30px;
+    cursor: pointer;
+}
+.svg3 {
+    padding: 14px 20px;
+}
+.svg__container:hover .color--1 {
+    fill: #E1F4F5;
+}
+.svg__container:hover .color--2 {
+    fill: #F4FEFF;
+}
+.svg__container:hover .color--3 {
+    fill: #CAEFF2;
+}
+.svg__container:hover .color--4 {
+    fill: #52C29D;
+}
+.svg__container:hover .color--11 {
+    fill: #D1E7FF;
+}
+.svg__container:hover .color--12 {
+    fill: #B9DCFF;
+}
+.svg__container:hover .color--13 {
+    fill: #E8F3FF;
+}
+.svg__container:hover .color--15 {
+    fill: #007FFC;
+}
+.svg__container:hover .color--31 {
+    fill: #E1F4F5;
+}
+.svg__container:hover .color--32 {
+    fill: #CAEFF2;
+}
+.svg__container:hover .color--33 {
+    fill: #F4FEFF;
+}
+.svg__container:hover .color--34 {
+    fill: #52C29D;
+}
+
+.first__h3 {
+    margin-bottom: 15px;
+    font-family: Roboto;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 21.28px;
+    letter-spacing: 0.2px;
+    color: #16133D;
+}
+.first__p__sub {
+    margin-bottom: 30px;
+    font-family: Roboto;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    color: #16133D;
+}
+.footer__container {
+    padding: 40px 135px;
+    background-color: #16133D;
+}
+.footer__logo {
+    display: flex;
+    gap: 13px;
+    margin-bottom: 40px;
+}
+.footer__h1 {
+    color: #FFFFFF;
+}
+.footer__ul {
+    display: flex;
+    gap: 10px;
+}
+.footer_li {
+    list-style: none;
+    background-color: #EFEEF3;
+    padding: 10px;
+    border-radius: 5px;
+}
+.footer_li:nth-child(5) {
+    padding-top: 11px;
+}
+.footera {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footera:hover .a__color {
+    fill: #3DB370;
+}
+
