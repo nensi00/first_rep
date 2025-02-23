@@ -1,0 +1,85 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.button {
+  padding: 24px 40px;
+  border-radius: 8px;
+  background-color: #F78D2E;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  border: 1px solid #F78D2E;
+}
+.button:hover {
+  background-color: transparent;
+  color: #F78D2E;
+  padding: 24px 40px;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  border: 1px solid #F78D2E;
+}
+.button:active {
+  color: white;
+  background-color: black;
+}
+.button--secondary {
+  background-color: transparent;
+  color: #F78D2E;
+  padding: 24px 40px;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  border: 1px solid #F78D2E;
+}
+.button--secondary:hover {
+  padding: 24px 40px;
+  color: black;
+  border-radius: 8px;
+  background-color: #F78D2E;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  border: 1px solid #F78D2E;
+}
+.button--secondary:active {
+  color: brown;
+  background-color: aquamarine;
+}
+
+:root {
+  --color-red: red;
+}
+
+.hero__title {
+  color: red;
+}
+.hero__title:hover {
+  color: blue;
+}
+.hero__title:before {
+  content: "123";
+}
+@media (max-width: 991px) {
+  .hero__title {
+    color: green;
+  }
+}
+.hero__text {
+  background-color: aqua;
+}
+
+.container {
+  background: linear-gradient(90deg, rgb(131, 58, 180) 0%, rgb(253, 29, 29) 50%, rgb(252, 176, 69) 100%);
+  border-radius: 15px;
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,47 @@
+.button {
+    padding: 24px 40px;
+    border-radius: 8px;
+    background-color: #F78D2E;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border: 1px solid #F78D2E;
+
+    &:hover {
+        background-color: transparent;
+        color: #F78D2E;
+        padding: 24px 40px;
+        border-radius: 8px;
+        font-size: 16px;
+        cursor: pointer;
+        border: 1px solid #F78D2E;
+    }
+    &:active {
+        color: white;
+        background-color: black;
+    }
+    &--secondary {
+        background-color: transparent;
+        color: #F78D2E;
+        padding: 24px 40px;
+        border-radius: 8px;
+        font-size: 16px;
+        cursor: pointer;
+        border: 1px solid #F78D2E;
+
+        &:hover {
+            padding: 24px 40px;
+            color: black;
+            border-radius: 8px;
+            background-color: #F78D2E;
+            font-size: 16px;
+            cursor: pointer;
+            border: none;
+            border: 1px solid #F78D2E;
+        }
+        &:active {
+            color: brown;
+            background-color: aquamarine
+    }
+}
+}
