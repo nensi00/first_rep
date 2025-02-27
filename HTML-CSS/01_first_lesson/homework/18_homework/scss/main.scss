@@ -1,0 +1,10 @@
+// Pages
+@use "./pages/page.scss";
+// Component
+@use "./component/input.scss";
+@use "./component/buttons.scss";
+// Fonts
+@use "./fonts/import_font.scss";
+@use "./fonts/font.scss";
+// Variables
+@use "./_variables/variable.scss"

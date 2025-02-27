@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="container container__top">
+        <h1 class="title">Create an Account</h1>
+        <div class="form">
+          <div class="form__input">
+            <label for="firstname" class="input__label">First Name</label>
+            <input type="text" class="input" id="firstname" />
+          </div>
+          <div class="form__input">
+            <label for="lastname" class="input__label">Last Name</label>
+            <input type="text" class="input" id="lastname" />
+          </div>
+        </div>
+        <div class="form__input form__email">
+          <label for="email" class="input__label">E-mail</label>
+          <input type="text" class="input" id="email" />
+          <span class="email__span"
+            >We'll never share your email with anyone else.</span
+          >
+        </div>
+        <div class="box">
+          <div class="box__div">
+            <input
+              class="box__radio"
+              id="box01"
+              type="radio"
+              name="check"
+              checked
+            />
+            <label for="box01">Male</label>
+          </div>
+          <div class="box__div">
+            <input class="box__radio" id="box02" type="radio" name="check" />
+            <label for="box02">Female</label>
+          </div>
+        </div>
+        <div class="form">
+          <div class="form__input">
+            <label for="country" class="input__label">Country</label>
+            <select class="input" id="country">
+              <option selected disabled>Select</option>
+              <option value="1">Option 1</option>
+              <option value="2">Option 2</option>
+              <option value="3">Option 3</option>
+            </select>
+          </div>
+          <div class="form__input">
+            <label for="city" class="input__label">City</label>
+            <input type="text" class="input" id="city" />
+          </div>
+        </div>
+        <button class="btn">Sign Up</button>
+        <div class="text">
+          <p class="text__p">
+            By clicking the 'Sign Up' button, you confirm that you accept our<br />
+            <a href="#" class="text__a">Terms of Use</a> and
+            <a href="#" class="text__a">Privacy Policy</a>
+          </p>
+        </div>
+        <hr />
+        <footer class="footer">
+          <div class="footer__container">
+            <p class="footer__p">Have an account?</p>
+            <a href="#" class="footer__a">Log In</a>
+          </div>
+        </footer>
+      </div>
+      <div class="container container__bot">
+        <h1 class="title">Profile</h1>
+        <div class="input-container">
+          <img src="./images/📷 Image.png" alt="" />
+          <div class="input__content">
+            <input type="file" class="input input__bot" />
+            <span class="email__span">Up to 1 MB (300x300 px)</span>
+            <svg
+              class="svg__icon"
+              width="16"
+              height="16"
+              viewBox="0 0 16 16"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M4.78001 3.33333L6.00001 2H10L11.22 3.33333H13.3333C14.0667 3.33333 14.6667 3.93333 14.6667 4.66667V12.6667C14.6667 13.4 14.0667 14 13.3333 14H2.66668C1.93334 14 1.33334 13.4 1.33334 12.6667V4.66667C1.33334 3.93333 1.93334 3.33333 2.66668 3.33333H4.78001ZM4.66668 8.66667C4.66668 10.5067 6.16001 12 8.00001 12C9.84001 12 11.3333 10.5067 11.3333 8.66667C11.3333 6.82667 9.84001 5.33333 8.00001 5.33333C6.16001 5.33333 4.66668 6.82667 4.66668 8.66667ZM8.00001 10.8C9.17822 10.8 10.1333 9.84487 10.1333 8.66667C10.1333 7.48846 9.17822 6.53333 8.00001 6.53333C6.8218 6.53333 5.86668 7.48846 5.86668 8.66667C5.86668 9.84487 6.8218 10.8 8.00001 10.8Z"
+                fill="#969696"
+              />
+            </svg>
+            <button class="bot__button" type="reset">
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 16 16"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M4.00001 12.6667C4.00001 13.4 4.60001 14 5.33334 14H10.6667C11.4 14 12 13.4 12 12.6667V4.66667H4.00001V12.6667ZM12.6667 2.66667H10.3333L9.66668 2H6.33334L5.66668 2.66667H3.33334V4H12.6667V2.66667Z"
+                  fill="#969696"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+        <div class="form">
+          <div class="form__input">
+            <label for="firstname1" class="input__label">Name</label>
+            <input type="text" class="input" id="firstname1" />
+          </div>
+          <div class="form__input">
+            <label for="email1" class="input__label">E-mail</label>
+            <input type="email" class="input" id="email1" />
+          </div>
+          <div class="form__input">
+            <label for="country1" class="input__label">Country</label>
+            <select name="" id="country1" class="select__bot">
+              <option selected disabled>Select</option>
+              <option value="1">Option 1</option>
+              <option value="2">Option 2</option>
+              <option value="3">Option 3</option>
+            </select>
+          </div>
+          <div class="form__input">
+            <label for="city1" class="input__label">City</label>
+            <input type="text" class="input" id="city1" />
+          </div>
+          <div class="form__input">
+            <label for="code1" class="input__label">Zip Code</label>
+            <input type="tel" class="input" id="code1" />
+          </div>
+          <div class="form__input">
+            <label for="number1" class="input__label">Phone Number</label>
+            <input type="tel" class="input" id="number1" />
+          </div>
+        </div>
+        <div class="btn__bot">
+          <button class="btn">Update</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
