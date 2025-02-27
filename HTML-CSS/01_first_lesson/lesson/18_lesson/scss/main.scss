@@ -1,4 +1,9 @@
 // Page style
 @use "./styles/style.scss";
-// Button style
-@use "./buttons/button.scss";
+// Component style
+@use "./component/buttons/button.scss";
+@use "./component/input/input.scss";
+// Variables
+@use "./_variable/variable.scss";
+// Form
+@use "./form.scss";
