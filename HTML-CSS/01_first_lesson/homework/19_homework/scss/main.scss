@@ -1,0 +1,13 @@
+//reset
+@use "./reset.scss";
+//page
+@use "./page.scss";
+//fonts
+@use "./fonts/import_font.scss";
+@use "./fonts/font.scss";
+//component
+@use "./component/buttons.scss";
+//colors-variables
+@use "./variables/variable.scss";
+//sidebar
+@use "./sidebar.scss";
