@@ -1,0 +1,19 @@
+// Variable
+@use "./variables/font.scss";
+@use "./variables/import__fonts.scss";
+@use "./variables/variable.scss";
+
+// Global
+@use "./global/global.scss";
+@use "./global/reset.scss";
+
+// Component
+@use "./component/swiper.scss";
+// Common 
+@use "./common/header.scss";
+@use "./common/main.scss";
+@use "./common/footer.scss";
+
+
+
+// Pages

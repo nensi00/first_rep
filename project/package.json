@@ -1,0 +1,16 @@
+{
+  "dependencies": {
+    "sass": "^1.85.1"
+  },
+  "name": "project",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "start": "sass --watch  scss/main.scss style.css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
