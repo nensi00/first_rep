@@ -9,9 +9,13 @@
 
 // Component
 @use "./component/swiper.scss";
+@use "./component/inputs.scss";
+@use "./component/buttons.scss";
+
 // Common 
 @use "./common/header.scss";
 @use "./common/main.scss";
 @use "./common/footer.scss";
 
 // Pages
+@use "./pages/contact.scss";

@@ -1,0 +1,52 @@
+.contact__image {
+    position: relative;
+    margin-bottom: 64px;
+}
+.contact__p {
+    font: var(--font-card-text-main);
+    color: var(--color-contact-title);
+    text-transform: uppercase;
+    position: absolute;
+    top: 205px;
+    left: 80px;
+}
+.contact__form {
+    display: flex;
+    flex-direction: column;
+    max-width: 649px;
+}
+.input__group {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+.email__input {
+    margin-bottom: 20px;
+}
+.form__contact {
+    display: flex;
+    justify-content: space-between;
+}
+
+.text__container {
+    display: flex;
+    align-items: flex-start;
+    gap: 33px;
+    margin-bottom: 35px;
+}
+.text__p__main {
+    font: var(--font-card-text);
+    color: var(--text-color-black);
+    margin-bottom: 10px;
+}
+.text__p__main__number {
+    font-family: "Work Sans", sans-serif;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 100%;
+    text-transform: lowercase;
+}
+.text__p__sub {
+    font: var(--font-card-text-sub);
+    color: var(--text-color-black);
+}
