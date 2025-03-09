@@ -50,3 +50,33 @@
     font: var(--font-card-text-sub);
     color: var(--text-color-black);
 }
+
+@media (max-width:768px) {
+    .contact__image img {
+        max-width: 768px;
+    }
+    .contact__p {
+        font: var(--font-card-text-main);
+        color: var(--color-contact-title);
+        text-transform: uppercase;
+        position: absolute;
+        top: 110px;
+        left: 30px;
+    }
+    .contact__form {
+        width: 100%;
+    }
+    .input__group {
+        display: flex;
+        flex-direction: column;
+    }
+    .form__contact {
+        display: flex;
+        flex-direction: column;
+    }
+    .form, .text__contact {
+       display: flex;
+       justify-content: center;
+       align-items: center;
+    }
+}
