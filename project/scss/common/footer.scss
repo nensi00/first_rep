@@ -37,3 +37,22 @@
 .footer__text__p:last-child {
     margin-bottom: 0;
 }
+
+@media (max-width: 768px) {
+    .footer__container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .footer__nav__p {
+        text-align: center;
+    }
+    .footer__navigation {
+        align-items: center;
+        margin-bottom: 20px;
+    }
+    .footer__text {
+        align-items: center;
+    }
+}

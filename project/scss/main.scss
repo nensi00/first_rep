@@ -1,3 +1,4 @@
+
 // Variable
 @use "./variables/font.scss";
 @use "./variables/import__fonts.scss";
@@ -14,8 +15,10 @@
 
 // Common 
 @use "./common/header.scss";
-@use "./common/main.scss";
+
 @use "./common/footer.scss";
 
 // Pages
 @use "./pages/contact.scss";
+
+@use "./common/mains.scss";

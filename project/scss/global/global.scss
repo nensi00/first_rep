@@ -1,3 +1,8 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
 .container {
     max-width: 1920px;
     background-color: var(--color-site-bgc);
@@ -13,3 +18,10 @@ main {
     margin: 0 auto;
     max-width: 1320px;
 }  
+
+@media (max-width: 768px) {
+    .container {
+        max-width: 768px;
+        margin: 0 auto;
+    }
+}
