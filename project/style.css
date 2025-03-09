@@ -485,8 +485,11 @@ textarea {
 }
 
 @media (max-width: 768px) {
+  .contact__container {
+    text-align: center;
+  }
   .contact__image img {
-    max-width: 768px;
+    max-width: 728px;
   }
   .contact__p {
     font: var(--font-card-text-main);
@@ -494,7 +497,7 @@ textarea {
     text-transform: uppercase;
     position: absolute;
     top: 110px;
-    left: 30px;
+    left: 40px;
   }
   .contact__form {
     width: 100%;
@@ -511,6 +514,13 @@ textarea {
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+  .text__container__p {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: start;
+    text-align: left;
   }
 }
 .hero__container {
