@@ -5,6 +5,7 @@
 @use "./variables/variable.scss";
 
 // Global
+@use "./common/mains.scss";
 @use "./global/global.scss";
 @use "./global/reset.scss";
 
@@ -20,5 +21,9 @@
 
 // Pages
 @use "./pages/contact.scss";
+@use "./pages/news.scss";
+@use "./pages/news_open.scss";
+@use "./pages/incubator.scss";
+@use "./pages/collection.scss";
+@use "./pages/collection_open.scss";
 
-@use "./common/mains.scss";

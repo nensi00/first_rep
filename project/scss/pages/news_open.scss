@@ -1,0 +1,126 @@
+.content {
+    margin-bottom: 40px;
+}
+.container__links {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 30px;
+    &__a {
+        font: var(--font-text);
+        color: var(--text-color-black);
+    }
+}
+.container__links a.active {
+        font: var(--font-text);
+        color: var(--color-active);
+}
+.container__text {
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: space-between;
+    &__txt {
+        max-width: 629px;
+    }
+}
+.txt__h2 {
+    font: var(--font-menu-text);
+    color: var(--text-color-black);
+    font-size: 32px;
+    margin-bottom: 17px;
+}
+.txt__date {
+    font: var(--font-text);
+    color: var(--text-color-gray);
+    font-style: italic;
+    margin-bottom: 17px;
+}
+.txt_p {
+    font: var(--font-text);
+    color: var(--text-color-black);
+    font-size: 18px;
+    margin-bottom: 17px;
+}
+
+// carousel
+.carousel__content {
+    position: relative;
+    margin-bottom: 76px;
+}
+.carousel-container {
+    // position: relative;
+    overflow: hidden;
+}
+
+.carousel {
+    overflow: hidden;
+    // position: relative;
+    width: 100%;
+}
+
+.carousel-track {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item {
+    min-width: 100%;
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    gap: 20px;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.nav-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    border: none;
+    cursor: pointer;
+    font-size: 24px;
+    padding: 10px;
+    background-color: var(--color-site-bgc);
+    font: var(--font-text);
+    color: var(--text-color-black);
+    font-size: 18px;
+}
+
+.left {
+    left: 10px;
+    top: 0px;
+    z-index: 100;
+}
+
+.right {
+    right: 10px;
+    top: 0px;
+    z-index: 100;
+}
+.btn__span {
+    color: var(--color-active);
+}
+
+@media (max-width: 768px) {
+    .container__links {
+        font-size: 20px;
+    }
+    .container__links__a {
+        font-size: 20px;
+    }
+    .container__links a.active {
+        font: var(--font-text);
+        color: var(--color-active);
+        font-size: 20px;
+}
+.container__text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+}
