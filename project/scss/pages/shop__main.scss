@@ -1,0 +1,27 @@
+.shop__card {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    &__block img {
+     margin-bottom: 24px;   
+    }
+    &__block p {
+        margin-bottom: 43px;
+        font: var(--font-card-text);
+        color: var(--text-color-black);
+        white-space: nowrap;
+    }
+}
+.one__card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 768px) {
+    .shop__card {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-items: center;
+    }
+}

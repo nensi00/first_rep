@@ -8,6 +8,10 @@
     &__a {
         font: var(--font-text);
         color: var(--text-color-black);
+
+        &:hover {
+            text-decoration: underline;
+        }
     }
 }
 .container__links a.active {
