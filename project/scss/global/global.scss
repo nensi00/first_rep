@@ -17,3 +17,7 @@ main {
     margin: auto;
     max-width: 1320px;
 }  
+svg {
+    pointer-events: bounding-box;
+    pointer-events: all;
+}

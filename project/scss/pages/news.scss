@@ -53,6 +53,9 @@
         padding: 5px 10px;
         border: 1px solid #F26624;
     }
+    &__a:hover {
+      box-shadow: 0px 0px 10px 1px #F26624;
+    }
 }
 
 @media (max-width: 768px) {
