@@ -1,11 +1,9 @@
-
 // Variable
 @use "./variables/font.scss";
 @use "./variables/import__fonts.scss";
 @use "./variables/variable.scss";
 
 // Global
-@use "./common/mains.scss";
 @use "./global/global.scss";
 @use "./global/reset.scss";
 
@@ -16,7 +14,7 @@
 
 // Common 
 @use "./common/header.scss";
-
+@use "./common/mains.scss";
 @use "./common/footer.scss";
 
 // Pages
@@ -29,4 +27,5 @@
 @use "./pages/shop.scss";
 @use "./pages/shop__main.scss";
 @use "./pages/testimonials.scss";
-
+@use "./pages/videos.scss";
+@use "./pages/videos__open.scss";
