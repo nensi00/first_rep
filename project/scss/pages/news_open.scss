@@ -18,7 +18,7 @@
         font: var(--font-text);
         color: var(--color-active);
 }
-.container__text {
+.container__textt {
     margin-bottom: 40px;
     display: flex;
     justify-content: space-between;
@@ -120,9 +120,9 @@
         color: var(--color-active);
         font-size: 20px;
 }
-.container__text {
+.container__textt {
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
     align-items: center;
 }
 }

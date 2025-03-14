@@ -471,7 +471,7 @@ textarea {
     justify-content: space-between;
   }
 }
-@media (max-width: 425px) {
+@media (min-width: 425px) and (max-width: 767px) {
   .header {
     padding: 10px;
     margin-bottom: 75px;
@@ -541,8 +541,8 @@ textarea {
     transition: bottom 0.3s, transform 0.3s 0.15s;
   }
   .header__ul {
-    top: 70px;
-    left: 150px;
+    top: 15%;
+    left: 40%;
     position: absolute;
     display: flex;
     flex-direction: column;
@@ -939,9 +939,6 @@ a img:hover {
   .header {
     max-width: 385px;
   }
-  .header__ul {
-    display: flex;
-  }
   .hero__container__img img {
     max-width: 385px;
   }
@@ -1243,12 +1240,12 @@ a img:hover {
   color: var(--color-active);
 }
 
-.container__text {
+.container__textt {
   margin-bottom: 40px;
   display: flex;
   justify-content: space-between;
 }
-.container__text__txt {
+.container__textt__txt {
   max-width: 629px;
 }
 
@@ -1349,9 +1346,9 @@ a img:hover {
     color: var(--color-active);
     font-size: 20px;
   }
-  .container__text {
+  .container__textt {
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
     align-items: center;
   }
 }
