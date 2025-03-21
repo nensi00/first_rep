@@ -1,7 +1,12 @@
 // style text
 :root {
+    //
+    --main-font-family: "Work Sans", sans-serif;
+    --secondary-font-family: "Comfortaa", sans-serif;
+    //
+
     --font-logo: 700 21px "Comfortaa", sans-serif;
-    --font-header: 400 16px "Work Sans", sans-serif;
+    --font-header: 400 16px var(--main-font-family);
     --font-title: 300 83px "Work Sans", sans-serif;
     --font-text: 400 14px "Open Sans", sans-serif;
     --font-card-text: 700 18px "Open Sans", sans-serif;
@@ -26,3 +31,5 @@
     --color-border-inputs: #D3D0CB;
     --color-active: #F26624;
 }
+
+//
