@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    .wrapper {
+      box-sizing: border-box;
+      padding: 0;
+      margin: 15% 25%;
+      text-align: center;
+    }
+    .btn {
+      margin-bottom: 20px;
+      padding: 10px;
+      outline: none;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      box-shadow: none;
+      transition: box-shadow 0.5s, background-color 0.5s;
+    }
+    .btn:hover {
+      box-shadow: 0px 0px 15px -4px #000000;
+      background-color: #454141;
+      color: white;
+    }
+    .age {
+      height: 25px;
+      width: 200px;
+      text-align: center;
+      outline: none;
+      border: 1px solid black;
+      margin-right: 15px;
+    }
+    .age:focus {
+      border: 1px solid rgb(167, 167, 226);
+      box-shadow: 0 0 5px rgba(52, 152, 219, 0.5);
+    }
+    .out {
+      font-size: 40px;
+    }
+    @media (min-width: 100px) and (max-width: 768px) {
+      .age {
+        margin-bottom: 20px;
+      }
+      .out {
+        font-size: 24px;
+      }
+    }
+  </style>
+  <body>
+    <div class="wrapper">
+      <h4 class="h4">Напишіть скільки Вам років</h4>
+      <input type="number" class="age" min="14" oninput="validateInput()" />
+      <button class="btn">перевірка</button>
+      <div class="out"></div>
+    </div>
+    <script src="./js/main.js"></script>
+  </body>
+</html>

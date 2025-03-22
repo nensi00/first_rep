@@ -31,9 +31,9 @@ document.querySelector('.btn7').onclick = () => {
     document.querySelector('.span-out7').innerHTML = `Формула площини кола: π*r2, де 𝑟 — це радіус. От же Ваша відповідь: ${3.14 * (inp4.value*inp4.value)} см.`;
 }
 document.querySelector('.btn8').onclick = () => {
-    document.querySelector('.span-out8').innerHTML = `Формула обчислення швидкості: швидкість = відстань / час. От же Ваша відповідь: ${inp5.value / inp6.value} км/год`;
+    document.querySelector('.span-out8').innerHTML = `Формула обчислення швидкості: швидкість = відстань / час. От же Ваша відповідь: ${Math.round(inp5.value / inp6.value)} км/год`;
 }
 document.querySelector('.btn9').onclick = () => {
-    document.querySelector('.span-out9').innerHTML = `Ви отримаєте: ${inp7.value*0.92} &euro;`;
+    document.querySelector('.span-out9').innerHTML = `Ви отримаєте: ${Math.round(inp7.value*0.92)} &euro;`;
 }
 
