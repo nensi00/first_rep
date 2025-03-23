@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .tasks {
+      border: 2px solid black;
+      border-radius: 15px;
+      width: 500px;
+      padding: 10px;
+      text-align: center;
+      margin-bottom: 15px;
+    }
+    p {
+      font-family: sans-serif;
+      font-size: 14px;
+    }
+    .text-fz {
+      text-transform: uppercase;
+      font-size: 18px;
+      font-weight: bold;
+    }
+    .inps {
+      margin-bottom: 15px;
+      padding: 15px;
+      border-radius: 15px;
+      outline: none;
+      border: 1px solid black;
+    }
+    .inps:focus {
+      border: 1px solid rgb(167, 167, 226);
+      box-shadow: 0 0 5px rgba(52, 152, 219, 0.5);
+    }
+    .btns {
+      padding: 10px;
+      border-radius: 10px;
+      text-transform: uppercase;
+      cursor: pointer;
+      transition: box-shadow 0.5s;
+      border: 1px solid black;
+    }
+    .btns:hover {
+      box-shadow: 0px 0px 15px -4px #000000;
+      border: 1px solid rgb(167, 167, 226);
+    }
+  </style>
+  <body>
+    <div class="wrapper">
+      <div class="container">
+        <div class="task1 tasks">
+          <p class="text text-fz">Вкажіть обсяг флешки в ГБ</p>
+          <input type="number" class="inp_1 inps" />
+          <br />
+          <button class="btn btns">Рахуємо</button>
+          <p class="text-result">
+            На флешку поміститься () файл(ів) розміром 820 Мб.
+          </p>
+          <p class="text-result1">Обсяг пам'яті що залишається:</p>
+        </div>
+        <div class="task2 tasks">
+          <p class="h3 text-fz">Уявімо, що Ви сьогодні в магазині</p>
+          <p class="text2">Скільки грошей Ви маєте? (грн)</p>
+          <input type="number" class="input2 inps" />
+          <p class="text2">
+            Введіть ціну шоколадки якої Ви бажаєте купити (грн)
+          </p>
+          <input type="number" class="input22 inps" />
+          <br />
+          <button class="btn2 btns">Рахуємо</button>
+          <p class="result2">К-сть шоколадок яку Ви можете придбати:</p>
+          <p class="result22">Решта, яка залишається у Вас:</p>
+        </div>
+        <div class="task3 tasks">
+          <p class="h3 text-fz">Ви прийшли до банку</p>
+          <p>Ведіть відсоток за яким бажаєте відкрити депозит</p>
+          <input type="number" class="input31 inps" />
+          <p>Введіть сумму яку бажаєте покласти на депозит у гривнях</p>
+          <input type="number" class="input3 inps" />
+          <p>Введіть на який період бажаєте відкрити депозит у місяцях</p>
+          <input type="number" class="input33 inps" />
+          <br />
+          <button class="btn3 btns">Рахуємо</button>
+          <p class="result30">Ваш дохід по закінченню строку депозиту:</p>
+          <p class="result3">Ваша сумма по закінченню строку депозиту:</p>
+        </div>
+        <div class="task4 tasks">
+          <p class="text text-fz">Магія перевертання чисел</p>
+          <p>Введіть тризначне число (123)</p>
+          <input type="number" class="input4 inps" />
+          <br />
+          <button class="btn4 btns">magic</button>
+          <p class="result4"></p>
+        </div>
+      </div>
+    </div>
+
+    <script src="./js/main.js"></script>
+  </body>
+</html>
