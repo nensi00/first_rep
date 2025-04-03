@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+    <body>
+        <div class="registration-form">
+            <input type="text" id="name" placeholder="Ім'я" />
+            <!-- Вік -->
+            <input type="number" id="age" placeholder="Вік" />
+            <span id="ageError"></span>
+            <input type="email" id="email" placeholder="Email" />
+            <input type="tel" id="phone" placeholder="Телефон" />
+            <select id="gender">
+              <option value="">--</option>
+              <option value="m">Чоловік</option>
+              <option value="w">Жінка</option>
+            </select>
+            <input type="password" id="password" placeholder="Пароль" />
+            <input
+              type="password"
+              id="confirmPassword"
+              placeholder="Повторіть пароль"
+            />
+            <p id="errorMsg"></p>
+            <button class="btn">Registration</button>
+            <div style="text-align: center; margin-top: 10px;">
+              Зареєстровано: <span id="counter">0</span>
+            </div>
+          </div>
+      
+          <!-- Кнопка Reset -->
+          <button id="resetBtn">Reset</button>
+      
+          <!-- Контейнер для виводу зареєстрованих користувачів -->
+          <div class="outContainer"></div>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
