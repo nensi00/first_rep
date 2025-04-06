@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript Functions Examples</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+        background-color: #f5f5f5;
+        color: #333;
+      }
+      header {
+        background-color: #3897f0;
+        color: #fff;
+        padding: 20px;
+        text-align: center;
+      }
+      main {
+        max-width: 900px;
+        margin: 20px auto;
+        padding: 20px;
+        background-color: #fff;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        border-radius: 8px;
+      }
+      section {
+        margin-bottom: 40px;
+        padding-bottom: 20px;
+        border-bottom: 1px solid #ddd;
+      }
+      section:last-child {
+        border-bottom: none;
+      }
+      h2 {
+        color: #3897f0;
+        margin-bottom: 10px;
+      }
+      .code-block {
+        background-color: #e8e8e8;
+        padding: 10px;
+        border-radius: 5px;
+        font-family: Consolas, monospace;
+        overflow-x: auto;
+        margin-bottom: 10px;
+        font-size: 14px;
+      }
+      .output {
+        background-color: #f0f0f0;
+        border: 1px dashed #ccc;
+        padding: 10px;
+        border-radius: 4px;
+        margin-top: 10px;
+      }
+      label {
+        font-size: 14px;
+        display: block;
+        margin-top: 8px;
+      }
+      input[type="text"],
+      input[type="number"],
+      input[type="email"] {
+        width: 100%;
+        padding: 8px;
+        margin-top: 4px;
+        box-sizing: border-box;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+      }
+      .inline-input {
+        width: 48%;
+        padding: 8px;
+        margin-top: 4px;
+        box-sizing: border-box;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        display: inline-block;
+      }
+      button {
+        background-color: #3897f0;
+        color: #fff;
+        border: none;
+        padding: 8px 12px;
+        margin-top: 10px;
+        cursor: pointer;
+        border-radius: 4px;
+        transition: background-color 0.3s ease;
+      }
+      button:hover {
+        background-color: #3182ce;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>JavaScript Functions Examples</h1>
+    </header>
+    <main>
+      <section id="function-types">
+        <h2>1. Різні варіанти створення функцій</h2>
+        <div class="code-block">
+          // Function Declaration<br />
+          function hello() { console.log("Hello"); }<br /><br />
+          // Function Expression<br />
+          const helloExp = function() { console.log("Hello"); };<br /><br />
+          // Arrow Function<br />
+          const helloArrow = () => { console.log("Hello"); };<br /><br />
+          // Function Constructor<br />
+          const helloConstructor = new Function('console.log("Hello");');
+        </div>
+        <button onclick="testHello()">Test Functions</button>
+        <div id="output1" class="output"></div>
+      </section>
+      <section id="count-arguments">
+        <h2>2. Функція для підрахунку аргументів</h2>
+        <div class="code-block">
+          function countArguments() { return arguments.length; }<br /><br />
+          // Arrow Function з використанням rest-параметрів<br />
+          const countArgumentsArrow = (...args) => args.length;
+        </div>
+        <label for="inputCountArguments"
+          >Введіть аргументи (розділяйте комами):</label
+        >
+        <input
+          type="text"
+          id="inputCountArguments"
+          placeholder="наприклад: 1,2,3,abc"
+        />
+        <button onclick="testCountArguments()">Test countArguments</button>
+        <div id="output2" class="output"></div>
+      </section>
+      <section id="compare-numbers">
+        <h2>3. Функція для порівняння двох чисел</h2>
+        <div class="code-block">
+          function compareNumbers(a, b) {<br />
+          &nbsp;&nbsp;if (a &lt; b) return -1;<br />
+          &nbsp;&nbsp;if (a &gt; b) return 1;<br />
+          &nbsp;&nbsp;return 0;<br />
+          }
+        </div>
+        <label for="compareNum1">Число 1:</label>
+        <input type="number" id="compareNum1" placeholder="Введіть число 1" />
+        <label for="compareNum2">Число 2:</label>
+        <input type="number" id="compareNum2" placeholder="Введіть число 2" />
+        <button onclick="testCompareNumbers()">Test compareNumbers</button>
+        <div id="output3" class="output"></div>
+      </section>
+      <section id="factorial">
+        <h2>4. Функція обчислення факторіалу</h2>
+        <div class="code-block">
+          function factorial(n) {<br />
+          &nbsp;&nbsp;if (n &lt; 0) return undefined;<br />
+          &nbsp;&nbsp;if (n === 0 || n === 1) return 1;<br />
+          &nbsp;&nbsp;return n * factorial(n - 1);<br />
+          }
+        </div>
+        <label for="factorialInput">Введіть число:</label>
+        <input type="number" id="factorialInput" placeholder="Наприклад: 5" />
+        <button onclick="testFactorial()">Test factorial</button>
+        <div id="output4" class="output"></div>
+      </section>
+      <section id="combine-digits">
+        <h2>5. Функція для об'єднання трьох цифр в одне число</h2>
+        <div class="code-block">
+          function combineDigits(a, b, c) {<br />
+          &nbsp;&nbsp;return Number('' + a + b + c);<br />
+          }
+        </div>
+        <label for="digit1">Цифра 1:</label>
+        <input type="number" id="digit1" placeholder="Наприклад: 1" />
+        <label for="digit2">Цифра 2:</label>
+        <input type="number" id="digit2" placeholder="Наприклад: 4" />
+        <label for="digit3">Цифра 3:</label>
+        <input type="number" id="digit3" placeholder="Наприклад: 9" />
+        <button onclick="testCombineDigits()">Test combineDigits</button>
+        <div id="output5" class="output"></div>
+      </section>
+      <section id="calc-area">
+        <h2>6. Функція обчислення площі</h2>
+        <div class="code-block">
+          function calcArea(length, width) {<br />
+          &nbsp;&nbsp;if (width === undefined) width = length;<br />
+          &nbsp;&nbsp;return length * width;<br />
+          }
+        </div>
+        <label for="calcAreaLength">Довжина:</label>
+        <input
+          type="number"
+          id="calcAreaLength"
+          placeholder="Введіть довжину"
+        />
+        <label for="calcAreaWidth">Ширина (необов'язково):</label>
+        <input
+          type="number"
+          id="calcAreaWidth"
+          placeholder="Введіть ширину або залиште порожнім"
+        />
+        <button onclick="testCalcArea()">Test calcArea</button>
+        <div id="output6" class="output"></div>
+      </section>
+    </main>
+    <script>
+      function hello() {
+        return "Hello from Function Declaration";
+      }
+      const helloExp = function () {
+        return "Hello from Function Expression";
+      };
+      const helloArrow = () => {
+        return "Hello from Arrow Function";
+      };
+      const helloConstructor = new Function(
+        'return "Hello from Function Constructor";'
+      );
+      function testHello() {
+        let result = "";
+        result += hello() + "<br>";
+        result += helloExp() + "<br>";
+        result += helloArrow() + "<br>";
+        result += helloConstructor();
+        document.getElementById("output1").innerHTML = result;
+      }
+      function countArguments() {
+        return arguments.length;
+      }
+      const countArgumentsArrow = (...args) => args.length;
+      function testCountArguments() {
+        const input = document
+          .getElementById("inputCountArguments")
+          .value.trim();
+        let args;
+        if (input === "") {
+          args = [1, 2, 3, "a"];
+        } else {
+          args = input.split(",").map((item) => item.trim());
+        }
+        const res1 = countArguments(...args);
+        const res2 = countArgumentsArrow(...args);
+        document.getElementById("output2").innerHTML =
+          "countArguments(" +
+          args.join(", ") +
+          ") = " +
+          res1 +
+          "<br>" +
+          "countArgumentsArrow(" +
+          args.join(", ") +
+          ") = " +
+          res2;
+      }
+      function compareNumbers(a, b) {
+        if (a < b) return -1;
+        if (a > b) return 1;
+        return 0;
+      }
+      function testCompareNumbers() {
+        const num1 = parseFloat(document.getElementById("compareNum1").value);
+        const num2 = parseFloat(document.getElementById("compareNum2").value);
+        const a = isNaN(num1) ? 3 : num1;
+        const b = isNaN(num2) ? 5 : num2;
+        const res = compareNumbers(a, b);
+        document.getElementById("output3").innerHTML =
+          "compareNumbers(" + a + ", " + b + ") = " + res;
+      }
+      function factorial(n) {
+        if (n < 0) return undefined;
+        if (n === 0 || n === 1) return 1;
+        return n * factorial(n - 1);
+      }
+      function testFactorial() {
+        const input = document.getElementById("factorialInput").value;
+        const n = parseInt(input);
+        const res = isNaN(n) ? "Введіть число" : factorial(n);
+        document.getElementById("output4").innerHTML =
+          "factorial(" + n + ") = " + res;
+      }
+      function combineDigits(a, b, c) {
+        return Number("" + a + b + c);
+      }
+      function testCombineDigits() {
+        const d1 = document.getElementById("digit1").value;
+        const d2 = document.getElementById("digit2").value;
+        const d3 = document.getElementById("digit3").value;
+        const digit1 = d1 === "" ? 1 : d1;
+        const digit2 = d2 === "" ? 4 : d2;
+        const digit3 = d3 === "" ? 9 : d3;
+        const res = combineDigits(digit1, digit2, digit3);
+        document.getElementById("output5").innerHTML =
+          "combineDigits(" +
+          digit1 +
+          ", " +
+          digit2 +
+          ", " +
+          digit3 +
+          ") = " +
+          res;
+      }
+      function calcArea(length, width) {
+        if (width === undefined || width === "") width = length;
+        return length * width;
+      }
+      function testCalcArea() {
+        const lengthVal = document.getElementById("calcAreaLength").value;
+        const widthVal = document.getElementById("calcAreaWidth").value;
+        const length = parseFloat(lengthVal);
+        const width =
+          widthVal === "" || isNaN(parseFloat(widthVal))
+            ? length
+            : parseFloat(widthVal);
+        if (isNaN(length)) {
+          document.getElementById("output6").innerHTML =
+            "Будь ласка, введіть довжину";
+          return;
+        }
+        const res = calcArea(length, width);
+        document.getElementById("output6").innerHTML =
+          "calcArea(" +
+          length +
+          (widthVal === "" ? ")" : ", " + width + ")") +
+          " = " +
+          res;
+      }
+    </script>
+  </body>
+</html>
