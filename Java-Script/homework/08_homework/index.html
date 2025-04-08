@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Магазин товаров</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <!-- Шапка с логотипом и иконкой корзины -->
+    <header class="header">
+      <div class="header-container">
+        <div class="logo">Магазин</div>
+        <div class="cart-icon" id="openCart">
+          <!-- Здесь можно использовать свою картинку корзины -->
+          <img
+            src="/img/free-icon-shopping-cart-1374128.png"
+            alt=""
+            style="width: 26px; height: 26px"
+          />
+          <span class="cart-count" id="cart-count">0</span>
+        </div>
+      </div>
+    </header>
+
+    <!-- Основной контент страницы -->
+    <main>
+      <div class="wrapper">
+        <div class="container">
+          <!-- Блок фильтров -->
+          <div class="filters">
+            <input
+              type="text"
+              id="search-input"
+              placeholder="Поиск по товарам"
+            />
+            <select id="category-select">
+              <option value="all">Все категории</option>
+              <option value="smartphones">Смартфоны</option>
+              <option value="tv">Телевизоры</option>
+              <option value="fridge">Холодильники</option>
+              <option value="headphones">Наушники</option>
+            </select>
+          </div>
+          <!-- Контейнер для карточек товаров -->
+          <div id="products-container" class="products-container"></div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Оверлей для затемнения страницы, когда корзина открыта -->
+    <div class="cart-overlay" id="cart-overlay"></div>
+    <!-- Выезжающая панель корзины -->
+    <div class="cart-panel" id="cart-panel">
+      <button class="close-cart" id="closeCart">×</button>
+      <h2>Корзина</h2>
+      <div id="cart-container" class="cart-container"></div>
+      <button id="clear-cart" class="clear-cart">Очистить корзину</button>
+    </div>
+
+    <script src="./js/main.js"></script>
+  </body>
+</html>
