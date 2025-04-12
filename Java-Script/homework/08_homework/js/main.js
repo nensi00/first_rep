@@ -4,56 +4,56 @@ const products = [
       id: 1,
       title: "Iphone 16 Pro Max",
       price: 1699.99,
-      image: "/img/Iphone13promax.jpg",
+      image: "./img/Iphone13promax.jpg",
       category: "smartphones"
     },
     {
       id: 2,
       title: "Samsung S25 Ultra",
       price: 1599.99,
-      image: "/img/samsung.jpg",
+      image: "./img/samsung.jpg",
       category: "smartphones"
     },
     {
       id: 3,
       title: "TV Samsung",
       price: 499.99,
-      image: "/img/tel1.jpg",
+      image: "./img/tel1.jpg",
       category: "tv"
     },
     {
       id: 4,
       title: "TV Xiaomi",
       price: 399.99,
-      image: "/img/tel2.jpg",
+      image: "./img/tel2.jpg",
       category: "tv"
     },
     {
       id: 5,
       title: "Fridge BOSCH",
       price: 899.99,
-      image: "/img/xolod1.jpg",
+      image: "./img/xolod1.jpg",
       category: "fridge"
     },
     {
       id: 6,
       title: "Fridge MAZERATTI",
       price: 269.99,
-      image: "/img/xolod2.jpg",
+      image: "./img/xolod2.jpg",
       category: "fridge"
     },
     {
       id: 7,
       title: "Headphones APPLE",
       price: 199.99,
-      image: "/img/nau1.jpg",
+      image: "./img/nau1.jpg",
       category: "headphones"
     },
     {
       id: 8,
       title: "Headphones HUAWEI",
       price: 99.99,
-      image: "/img/nau2.jpg",
+      image: "./img/nau2.jpg",
       category: "headphones"
     }
     // Можно добавить другие товары при необходимости

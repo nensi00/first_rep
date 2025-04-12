@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .light {
+        --text-color: #000;
+        --bg-color: #fff;
+      }
+      .dark {
+        --text-color: #fff;
+        --bg-color: #000;
+      }
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        background-color: var(--bg-color);
+      }
+      header {
+        background-color: aqua;
+        display: flex;
+        justify-content: space-between;
+        padding: 20px;
+      }
+      main {
+        padding: 16px 40px;
+        color: var(--text-color);
+      }
+      p {
+        padding: 16px 0px 40px;
+      }
+      .box {
+        border-radius: 10px;
+        width: 80px;
+        height: 30px;
+        background-color: bisque;
+        cursor: pointer;
+      }
+      .box__item {
+        width: 30px;
+        height: 30px;
+        background-color: greenyellow;
+        border-radius: 30px;
+        position: relative;
+        top: 0;
+        left: 0;
+        transition: left 0.3s ease, background-color 0.3s ease;
+      }
+      .box--active {
+        background-color: #555555;
+      }
+      .box--active .box__item {
+        background-color: #f1c40f;
+        left: 50px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <span>logo</span>
+      <span>Menu</span>
+      <button class="btn">Search all title</button>
+      <div class="box" id="changeTheme">
+        <div class="box__item"></div>
+      </div>
+    </header>
+
+    <main>
+      <h2>Test Title</h2>
+
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi odit sint
+        illo soluta minus voluptatibus eligendi nulla ut sed voluptatem eum quis
+        facilis, eos debitis unde sunt earum temporibus porro nobis! Qui magnam
+        quae veritatis labore nesciunt aspernatur cumque sed, molestias ipsa
+        atque culpa! Corporis nemo minus debitis! Aliquam accusamus officiis,
+        nulla rem sit adipisci blanditiis corporis id dolor, distinctio
+        obcaecati quidem autem doloremque quae a necessitatibus itaque
+        voluptatem atque magni nam, magnam officia repudiandae. Similique velit
+        facilis nam, fugit assumenda, perspiciatis maxime sint modi labore,
+        illum soluta dolorem excepturi eveniet? Accusamus ad facilis, voluptas
+        nihil repellat laborum. Repellat, rerum!
+      </p>
+      <h2>Test Title</h2>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi odit sint
+        illo soluta minus voluptatibus eligendi nulla ut sed voluptatem eum quis
+        facilis, eos debitis unde sunt earum temporibus porro nobis! Qui magnam
+        quae veritatis labore nesciunt aspernatur cumque sed, molestias ipsa
+        atque culpa! Corporis nemo minus debitis! Aliquam accusamus officiis,
+        nulla rem sit adipisci blanditiis corporis id dolor, distinctio
+        obcaecati quidem autem doloremque quae a necessitatibus itaque
+        voluptatem atque magni nam, magnam officia repudiandae. Similique velit
+        facilis nam, fugit assumenda, perspiciatis maxime sint modi labore,
+        illum soluta dolorem excepturi eveniet? Accusamus ad facilis, voluptas
+        nihil repellat laborum. Repellat, rerum!
+      </p>
+      <h2>Test Title</h2>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi odit sint
+        illo soluta minus voluptatibus eligendi nulla ut sed voluptatem eum quis
+        facilis, eos debitis unde sunt earum temporibus porro nobis! Qui magnam
+        quae veritatis labore nesciunt aspernatur cumque sed, molestias ipsa
+        atque culpa! Corporis nemo minus debitis! Aliquam accusamus officiis,
+        nulla rem sit adipisci blanditiis corporis id dolor, distinctio
+        obcaecati quidem autem doloremque quae a necessitatibus itaque
+        voluptatem atque magni nam, magnam officia repudiandae. Similique velit
+        facilis nam, fugit assumenda, perspiciatis maxime sint modi labore,
+        illum soluta dolorem excepturi eveniet? Accusamus ad facilis, voluptas
+        nihil repellat laborum. Repellat, rerum!
+      </p>
+      <h2>Test Title</h2>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi odit sint
+        illo soluta minus voluptatibus eligendi nulla ut sed voluptatem eum quis
+        facilis, eos debitis unde sunt earum temporibus porro nobis! Qui magnam
+        quae veritatis labore nesciunt aspernatur cumque sed, molestias ipsa
+        atque culpa! Corporis nemo minus debitis! Aliquam accusamus officiis,
+        nulla rem sit adipisci blanditiis corporis id dolor, distinctio
+        obcaecati quidem autem doloremque quae a necessitatibus itaque
+        voluptatem atque magni nam, magnam officia repudiandae. Similique velit
+        facilis nam, fugit assumenda, perspiciatis maxime sint modi labore,
+        illum soluta dolorem excepturi eveniet? Accusamus ad facilis, voluptas
+        nihil repellat laborum. Repellat, rerum!
+      </p>
+      <h2>Test Title</h2>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi odit sint
+        illo soluta minus voluptatibus eligendi nulla ut sed voluptatem eum quis
+        facilis, eos debitis unde sunt earum temporibus porro nobis! Qui magnam
+        quae veritatis labore nesciunt aspernatur cumque sed, molestias ipsa
+        atque culpa! Corporis nemo minus debitis! Aliquam accusamus officiis,
+        nulla rem sit adipisci blanditiis corporis id dolor, distinctio
+        obcaecati quidem autem doloremque quae a necessitatibus itaque
+        voluptatem atque magni nam, magnam officia repudiandae. Similique velit
+        facilis nam, fugit assumenda, perspiciatis maxime sint modi labore,
+        illum soluta dolorem excepturi eveniet? Accusamus ad facilis, voluptas
+        nihil repellat laborum. Repellat, rerum!
+      </p>
+      <h2>Test Title</h2>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi odit sint
+        illo soluta minus voluptatibus eligendi nulla ut sed voluptatem eum quis
+        facilis, eos debitis unde sunt earum temporibus porro nobis! Qui magnam
+        quae veritatis labore nesciunt aspernatur cumque sed, molestias ipsa
+        atque culpa! Corporis nemo minus debitis! Aliquam accusamus officiis,
+        nulla rem sit adipisci blanditiis corporis id dolor, distinctio
+        obcaecati quidem autem doloremque quae a necessitatibus itaque
+        voluptatem atque magni nam, magnam officia repudiandae. Similique velit
+        facilis nam, fugit assumenda, perspiciatis maxime sint modi labore,
+        illum soluta dolorem excepturi eveniet? Accusamus ad facilis, voluptas
+        nihil repellat laborum. Repellat, rerum!
+      </p>
+      <h2>Test Title</h2>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi odit sint
+        illo soluta minus voluptatibus eligendi nulla ut sed voluptatem eum quis
+        facilis, eos debitis unde sunt earum temporibus porro nobis! Qui magnam
+        quae veritatis labore nesciunt aspernatur cumque sed, molestias ipsa
+        atque culpa! Corporis nemo minus debitis! Aliquam accusamus officiis,
+        nulla rem sit adipisci blanditiis corporis id dolor, distinctio
+        obcaecati quidem autem doloremque quae a necessitatibus itaque
+        voluptatem atque magni nam, magnam officia repudiandae. Similique velit
+        facilis nam, fugit assumenda, perspiciatis maxime sint modi labore,
+        illum soluta dolorem excepturi eveniet? Accusamus ad facilis, voluptas
+        nihil repellat laborum. Repellat, rerum!
+      </p>
+    </main>
+
+    <script src="./data/shop.js"></script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>

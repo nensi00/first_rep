@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <input type="text" />
+    <button class="btn1">res</button>
+    <button class="btn2">save</button>
+    <div class="out"></div>
+
+    <div class="calc">
+      <input type="text" class="inp1" style="width: 40px" /> +
+      <input type="text" class="inp2" style="width: 40px" /> =
+      <span class="out2"></span>
+      <br />
+      <button class="btn3">res</button>
+      <button class="btn4">clear</button>
+    </div>
+
+    <script>
+      let btn3 = document.querySelector(".btn3");
+      let out2 = document.querySelector(".out2");
+      let input1Elem = document.querySelector(".inp1");
+      let input2Elem = document.querySelector(".inp2");
+      let btn4 = document.querySelector(".btn4");
+
+      btn3.addEventListener("click", () => {
+        let inp1 = parseFloat(document.querySelector(".inp1").value);
+        let inp2 = parseFloat(document.querySelector(".inp2").value);
+        let result = inp1 + inp2;
+        localStorage.setItem("input", result);
+        localStorage.setItem("input1", inp1);
+        localStorage.setItem("input2", inp2);
+        out2.innerHTML = result;
+      });
+      out2.innerHTML = localStorage.getItem("input");
+      input1Elem.value = localStorage.getItem("input1");
+      input2Elem.value = localStorage.getItem("input2");
+
+      btn4.addEventListener("click", () => {
+        localStorage.clear();
+
+        // input1Elem.value = ``;
+        // input2Elem.value = ``;
+        // out2.innerHTML = ``;
+        location.reload();
+      });
+      //--------------------------------------------------
+      //   let out = document.querySelector(".out");
+      //   let btn = document.querySelector(".btn1");
+      //   let btnSave = document.querySelector(".btn2");
+      //   let inp = document.querySelector("input");
+
+      //   btn.addEventListener("click", () => {
+      //     localStorage.setItem("input", inp.value);
+      //     out.innerHTML = inp.value;
+      //   });
+
+      //   btnSave.addEventListener("click", () => {
+      //     out.innerHTML = localStorage.getItem("input");
+      //   });
+
+      //   localStorage.setItem("theme", "test");
+      //   localStorage.getItem("theme");
+
+      //   console.log(localStorage.getItem("theme"));
+      //   out.innerHTML = localStorage.getItem("theme");
+    </script>
+  </body>
+</html>
